@@ -1,3 +1,50 @@
+body {
+  font-family: 'Courier New', monospace;
+  background-color: #0d0d0d;
+  color: #00ffcc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+}
+
+input, button {
+  margin: 10px;
+  padding: 10px;
+  background-color: #222;
+  border: 1px solid #00ffcc;
+  color: #00ffcc;
+  font-family: 'Courier New', monospace;
+}
+
+#loading {
+  display: none;
+  font-size: 18px;
+  color: yellow;
+  margin-top: 20px;
+}
+
+#dashboard {
+  display: none;
+  margin-top: 20px;
+  background-color: #111;
+  padding: 20px;
+  border: 1px solid #00ffcc;
+  width: 80%;
+}
+
+#terminal {
+  background-color: black;
+  padding: 10px;
+  text-align: left;
+  margin-top: 10px;
+  color: #00ff00;
+  font-size: 14px;
+}
+
 #cmd {
   width: 80%;
   margin-top: 10px;
