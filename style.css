@@ -1,0 +1,29 @@
+body {
+  font-family: 'Courier New', monospace;
+  background-color: #0d0d0d;
+  color: #00ffcc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+input, button {
+  margin: 10px;
+  padding: 10px;
+  background-color: #222;
+  border: 1px solid #00ffcc;
+  color: #00ffcc;
+  font-family: 'Courier New', monospace;
+}
+
+#dashboard {
+  display: none;
+  margin-top: 20px;
+  text-align: left;
+  background-color: #111;
+  padding: 20px;
+  border: 1px solid #00ffcc;
+}
