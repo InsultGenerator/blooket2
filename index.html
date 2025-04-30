@@ -12,14 +12,23 @@
   <input type="password" id="password" placeholder="Password" />
   <button onclick="login()">Access Portal</button>
 
+  <div id="loading">
+    <p>Verifying credentials... Please wait.</p>
+  </div>
+
   <div id="dashboard">
     <h2>✅ Creator Dashboard Accessed</h2>
-    <p><strong>Welcome:</strong> j.stevens@blooket.com</p>
-    <p><strong>Access Level:</strong> Internal Staff Portal</p>
-    <p><strong>Login Time:</strong> Apr 23, 2025 - 14:17:36 EST</p>
-    <p><strong>2FA Status:</strong> Bypassed via backup recovery token</p>
-    <p><strong>IP Logged:</strong> 172.58.43.192 (proxy enabled)</p>
+    <div id="terminal">
+      <p>user@blooket:/home/j.stevens$ list-access</p>
+      <p>• Internal Docs Access</p>
+      <p>• User Account DB (Read-only)</p>
+      <p>• Reward Generation System</p>
+      <p>• Moderator Tools [Beta]</p>
+      <p>• 🔐 Session Key: 4b7d-ae9c-f024</p>
+    </div>
   </div>
+
+  <audio id="login-sound" src="https://freesound.org/data/previews/250/250629_4486188-lq.mp3"></audio>
 
   <script src="script.js"></script>
 </body>
