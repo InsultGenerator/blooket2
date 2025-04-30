@@ -1,15 +1,39 @@
-<div id="dashboard">
-  <h2>✅ Creator Dashboard Accessed</h2>
-  <div id="terminal">
-    <p>user@blooket:/home/j.stevens$ list-access</p>
-    <p>• Internal Docs Access</p>
-    <p>• User Account DB (Read-only)</p>
-    <p>• Reward Generation System</p>
-    <p>• Moderator Tools [Beta]</p>
-    <p>• 🔐 Session Key: 4b7d-ae9c-f024</p>
-    <br />
-    <div id="command-output"></div>
-    <label for="cmd">admin@blooket:~$ </label>
-    <input type="text" id="cmd" placeholder="Enter command" onkeydown="runCommand(event)">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blooket Internal Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Blooket Internal Login</h1>
+  <input type="text" id="username" placeholder="Email" />
+  <input type="password" id="password" placeholder="Password" />
+  <button onclick="login()">Access Portal</button>
+
+  <div id="loading">
+    <p>Verifying credentials... Please wait.</p>
   </div>
-</div>
+
+  <div id="dashboard">
+    <h2>✅ Creator Dashboard Accessed</h2>
+    <div id="terminal">
+      <p>user@blooket:/home/j.stevens$ list-access</p>
+      <p>• Internal Docs Access</p>
+      <p>• User Account DB (Read-only)</p>
+      <p>• Reward Generation System</p>
+      <p>• Moderator Tools [Beta]</p>
+      <p>• 🔐 Session Key: 4b7d-ae9c-f024</p>
+      <br />
+      <div id="command-output"></div>
+      <label for="cmd">admin@blooket:~$ </label>
+      <input type="text" id="cmd" placeholder="Enter command" onkeydown="runCommand(event)">
+    </div>
+  </div>
+
+  <audio id="login-sound" src="https://assets.mixkit.co/sfx/preview/mixkit-access-granted-tone-2863.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
