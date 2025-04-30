@@ -8,6 +8,7 @@ body {
   justify-content: center;
   height: 100vh;
   margin: 0;
+  text-align: center;
 }
 
 input, button {
@@ -19,11 +20,27 @@ input, button {
   font-family: 'Courier New', monospace;
 }
 
+#loading {
+  display: none;
+  font-size: 18px;
+  color: yellow;
+  margin-top: 20px;
+}
+
 #dashboard {
   display: none;
   margin-top: 20px;
-  text-align: left;
   background-color: #111;
   padding: 20px;
   border: 1px solid #00ffcc;
+  width: 80%;
+}
+
+#terminal {
+  background-color: black;
+  padding: 10px;
+  text-align: left;
+  margin-top: 10px;
+  color: #00ff00;
+  font-size: 14px;
 }
